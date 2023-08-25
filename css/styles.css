@@ -928,9 +928,6 @@ img {
   outline: transparent;
   transition: border-color 250ms var(--cubic);
 
-  @media screen and (min-width: 768px) {
-  }
-
   @media screen and (min-width: 1158px) {
     width: 264px;
   }
@@ -1013,7 +1010,7 @@ img {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--cubic);
 
-  min-width: 408px;
+  width: 100%;
   min-height: 584px;
   padding: 72px 24px 24px 24px;
 
@@ -1023,6 +1020,14 @@ img {
 
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+
+  @media screen and (min-width: 392px) and (max-width: 767px) {
+    width: 392px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 408px;
+  }
 }
 
 .modal__close-btn {
@@ -1197,10 +1202,6 @@ img {
   fill: var(--light-cloud-color);
 }
 
-/* .modal__policy-checkbox:focus + .modal__policy-label .modal__policy-icon {
-  border: 1px solid var(--hover-state-color);
-} */
-
 .modal__policy-text {
   vertical-align: middle;
   font-size: 12px;
@@ -1210,7 +1211,6 @@ img {
 }
 
 .modal__policy-link {
-  /* vertical-align: middle; */
   color: var(--primary-brand-color);
 }
 
